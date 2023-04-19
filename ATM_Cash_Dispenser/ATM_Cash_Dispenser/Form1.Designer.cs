@@ -34,7 +34,7 @@ namespace ATM_Cash_Dispenser
             this.label2 = new System.Windows.Forms.Label();
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.btnGiris = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnkKayitOl = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -70,6 +70,7 @@ namespace ATM_Cash_Dispenser
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(100, 22);
             this.txtSifre.TabIndex = 2;
+            this.txtSifre.UseSystemPasswordChar = true;
             // 
             // btnGiris
             // 
@@ -79,16 +80,18 @@ namespace ATM_Cash_Dispenser
             this.btnGiris.TabIndex = 3;
             this.btnGiris.Text = "Giriş Yap";
             this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
-            // linkLabel1
+            // lnkKayitOl
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(171, 152);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(72, 17);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
+            this.lnkKayitOl.AutoSize = true;
+            this.lnkKayitOl.Location = new System.Drawing.Point(171, 152);
+            this.lnkKayitOl.Name = "lnkKayitOl";
+            this.lnkKayitOl.Size = new System.Drawing.Size(57, 17);
+            this.lnkKayitOl.TabIndex = 4;
+            this.lnkKayitOl.TabStop = true;
+            this.lnkKayitOl.Text = "Kayıt Ol";
+            this.lnkKayitOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkKayitOl_LinkClicked);
             // 
             // Form1
             // 
@@ -96,7 +99,7 @@ namespace ATM_Cash_Dispenser
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(321, 210);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.lnkKayitOl);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.label2);
@@ -116,7 +119,7 @@ namespace ATM_Cash_Dispenser
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Button btnGiris;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lnkKayitOl;
     }
 }
 

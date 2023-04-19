@@ -1,0 +1,13 @@
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\bin\Debug\ATM_Cash_Dispenser.exe.config
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\bin\Debug\ATM_Cash_Dispenser.exe
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\bin\Debug\ATM_Cash_Dispenser.pdb
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.csproj.AssemblyReference.cache
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.Form1.resources
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.Form2.resources
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.Form3.resources
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.Properties.Resources.resources
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.csproj.GenerateResource.cache
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.csproj.CoreCompileInputs.cache
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.exe
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.pdb
+C:\Users\Kübra\source\GitHub\ATM_Cash_Dispenser\ATM_Cash_Dispenser\ATM_Cash_Dispenser\obj\Debug\ATM_Cash_Dispenser.Form4.resources

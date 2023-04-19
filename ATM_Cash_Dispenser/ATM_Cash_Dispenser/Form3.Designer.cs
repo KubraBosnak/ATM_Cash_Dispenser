@@ -36,12 +36,13 @@ namespace ATM_Cash_Dispenser
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.mskTC = new System.Windows.Forms.MaskedTextBox();
+            this.mmskTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.mskHesapNo = new System.Windows.Forms.MaskedTextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
+            this.btnHesapNo = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -115,61 +116,73 @@ namespace ATM_Cash_Dispenser
             this.label1.TabIndex = 15;
             this.label1.Text = "AD :";
             // 
-            // textBox1
+            // txtAd
             // 
-            this.textBox1.Location = new System.Drawing.Point(168, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 21;
+            this.txtAd.Location = new System.Drawing.Point(168, 30);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(184, 22);
+            this.txtAd.TabIndex = 21;
             // 
-            // textBox2
+            // txtSoyad
             // 
-            this.textBox2.Location = new System.Drawing.Point(168, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 22);
-            this.textBox2.TabIndex = 22;
+            this.txtSoyad.Location = new System.Drawing.Point(168, 76);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(184, 22);
+            this.txtSoyad.TabIndex = 22;
             // 
-            // maskedTextBox1
+            // mskTC
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(168, 117);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(184, 22);
-            this.maskedTextBox1.TabIndex = 23;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.mskTC.Location = new System.Drawing.Point(168, 117);
+            this.mskTC.Mask = "00000000000";
+            this.mskTC.Name = "mskTC";
+            this.mskTC.Size = new System.Drawing.Size(184, 22);
+            this.mskTC.TabIndex = 23;
+            this.mskTC.ValidatingType = typeof(int);
             // 
-            // maskedTextBox2
+            // mmskTelefon
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(168, 155);
-            this.maskedTextBox2.Mask = "(999) 000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(184, 22);
-            this.maskedTextBox2.TabIndex = 24;
+            this.mmskTelefon.Location = new System.Drawing.Point(168, 155);
+            this.mmskTelefon.Mask = "(999) 000-0000";
+            this.mmskTelefon.Name = "mmskTelefon";
+            this.mmskTelefon.Size = new System.Drawing.Size(184, 22);
+            this.mmskTelefon.TabIndex = 24;
             // 
-            // maskedTextBox3
+            // mskHesapNo
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(168, 193);
-            this.maskedTextBox3.Mask = "000000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(184, 22);
-            this.maskedTextBox3.TabIndex = 25;
-            this.maskedTextBox3.ValidatingType = typeof(int);
+            this.mskHesapNo.Enabled = false;
+            this.mskHesapNo.Location = new System.Drawing.Point(168, 193);
+            this.mskHesapNo.Mask = "000000";
+            this.mskHesapNo.Name = "mskHesapNo";
+            this.mskHesapNo.Size = new System.Drawing.Size(184, 22);
+            this.mskHesapNo.TabIndex = 25;
+            this.mskHesapNo.ValidatingType = typeof(int);
             // 
-            // textBox3
+            // txtSifre
             // 
-            this.textBox3.Location = new System.Drawing.Point(168, 230);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 22);
-            this.textBox3.TabIndex = 26;
+            this.txtSifre.Location = new System.Drawing.Point(168, 230);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(184, 22);
+            this.txtSifre.TabIndex = 26;
+            // 
+            // btnHesapNo
+            // 
+            this.btnHesapNo.Location = new System.Drawing.Point(374, 191);
+            this.btnHesapNo.Name = "btnHesapNo";
+            this.btnHesapNo.Size = new System.Drawing.Size(37, 32);
+            this.btnHesapNo.TabIndex = 27;
+            this.btnHesapNo.Text = "...";
+            this.btnHesapNo.UseVisualStyleBackColor = true;
+            this.btnHesapNo.Click += new System.EventHandler(this.btnHesapNo_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(374, 191);
+            this.button1.Location = new System.Drawing.Point(168, 318);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 32);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "...";
+            this.button1.Size = new System.Drawing.Size(184, 32);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "TEMİZLE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
@@ -177,14 +190,15 @@ namespace ATM_Cash_Dispenser
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(458, 369);
-            this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnKaydet);
+            this.Controls.Add(this.btnHesapNo);
+            this.Controls.Add(this.txtSifre);
+            this.Controls.Add(this.mskHesapNo);
+            this.Controls.Add(this.mmskTelefon);
+            this.Controls.Add(this.mskTC);
+            this.Controls.Add(this.txtSoyad);
+            this.Controls.Add(this.txtAd);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -207,12 +221,13 @@ namespace ATM_Cash_Dispenser
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.MaskedTextBox mskTC;
+        private System.Windows.Forms.MaskedTextBox mmskTelefon;
+        private System.Windows.Forms.MaskedTextBox mskHesapNo;
+        private System.Windows.Forms.TextBox txtSifre;
+        private System.Windows.Forms.Button btnHesapNo;
         private System.Windows.Forms.Button button1;
     }
 }
